@@ -1,0 +1,183 @@
+.loginContainer {
+    height: 100%;
+    width: 30%;
+    background-color: transparent;
+    border: 1px solid var(--loginbtn);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+.blueStrip {
+    height: 10px;
+    width: 100%;
+    background-color: blue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.loginHeading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+.loginHeading p {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.loginHeading h1 {
+    margin-top: 10px;
+}
+
+.loginForm {
+    height: 60%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 25px;
+}
+
+.loginRoles {
+    display: flex;
+    justify-content: start;
+    gap: 15px
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.formLogin input {
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid var(--loginbtn);
+    padding: 20px;
+}
+
+.formLogin button {
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: var(--loginbtn);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.5s all ease;
+}
+
+.formLogin button:hover {
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.5s all ease;
+}
+
+.loginWith {
+    background-color: #EFEFEF;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.loginWith button {
+    color: var(--loginbtn);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 15px;
+
+}
+
+
+/* Existing styles here... */
+
+@media (max-width: 768px) {
+    .loginContainer {
+        width: 90%;
+        margin-top: 140px;
+        /* Adjust width for smaller screens */
+    }
+
+    .loginForm {
+        padding: 15px;
+        /* Reduce padding for smaller screens */
+    }
+
+    .formLogin input {
+        height: 50px;
+        /* Adjust input height */
+        padding: 15px;
+        /* Adjust padding */
+    }
+
+    .formLogin button {
+        height: 50px;
+        /* Adjust button height */
+        font-size: 18px;
+        /* Adjust font size */
+    }
+
+    .loginWith {
+        height: auto;
+        /* Allow height to adjust based on content */
+        padding: 15px;
+        /* Add some padding */
+    }
+
+    .loginWith button {
+        width: 100%;
+        /* Make button take full width */
+        margin-top: 10px;
+        /* Adjust margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .loginContainer {
+        width: 95%;
+        margin-top: 140px;
+        /* Make container even narrower on very small screens */
+    }
+
+    .loginForm {
+        padding: 10px;
+        /* Further reduce padding */
+    }
+
+    .formLogin input {
+        height: 45px;
+        /* Adjust input height */
+        padding: 10px;
+        /* Adjust padding */
+    }
+
+    .formLogin button {
+        height: 45px;
+        /* Adjust button height */
+        font-size: 16px;
+        /* Adjust font size */
+    }
+
+    .loginWith {
+        padding: 10px;
+        /* Adjust padding */
+    }
+
+    .loginWith button {
+        width: 100%;
+        /* Full width button */
+    }
+}
